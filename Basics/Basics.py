@@ -185,13 +185,17 @@ print(abs(2+5j))
 # print(s3.intersection(s1, s2))    # output = ()
 # print(s2.intersection(s1, s3))    # output = ()
 # print(s1.intersection(s2, s3))    # output = ()
-a = "hellooo world"
-print(a.index("l"))   # index= 2
-print(a.rindex("l"))  # index = 11
-print(a.index("l", 3))  # index = 3
-print(a.index("l", 3, 9))  # index = 3
+# a = "hellooo world"
+# print(a.index("l"))   # index= 2
+# print(a.rindex("l"))  # index = 11
+# print(a.index("l", 3))  # index = 3
+# print(a.index("l", 3, 9))  # index = 3
 
 """           DICTIONARY    """
+
+
+
+
 
 
 
