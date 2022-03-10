@@ -92,7 +92,7 @@
  dictionary with string as key and ASCII value off it's first character as 
 its value if the string is off the odd length and string as key and length of the string is value : """
 
-"""        INLINE CONDITIONAL STATEMENT          """
+"""~~~~~~~~~~~~~~~~~~~~~~  INLINE CONDITIONAL STATEMENT~~~~~~~~~~~~~~~~~~~~~~~~~~~~ """
 # wap to check whether number is even or odd:
 # a = 4
 # print("even"if a % 2 == 0 else "odd number")
