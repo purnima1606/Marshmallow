@@ -170,20 +170,111 @@
 #         print(i ,end = " ")
 
 """2. wap to remove the dublicate or repeated character in the given string :"""
-s = "hello world"
-res = ""
-for i in s:
-    if i not in res:
-        res += i
-print(res)
+# s = "hello world"
+# res = ""
+# for i in s:
+#     if i not in res:
+#         res += i
+# print(res)
 
 """3.wap to print index and items in the given iterable: """
-s = "hello"
+# s = "hello"
+# for i in range(len(s)):
+#     print(s[i],i)
 
 """4. wap to convert the lower case character to upper case character and vice versa:"""
+# s = "HeLlOo Ram"
+# print(s)
+# for i in s:
+#     if "a" <= i <="z":
+#         print(chr(ord(i)-32), end="")
+#     else:
+#         print(chr(ord(i)+32), end="")             # output is @:
+
 """5. wap to count the number of element present in the iterable :"""
+# s = "hello worlds"
+# count=0
+# for i in s:
+#     count += 1
+# print(count)
+
 """6. wap to count the number of words present in the sentance:"""
+# s = "we are reading python"
+# x = s.split()
+# count = 0
+# for i in x:
+#     count += 1
+# print(count)
+
 """7. wap to count the number of repeated character in the string:"""
+# s="we are reading python"
+# res =""
+# for i in s:
+#     if i not in res:
+#         res += i
+#         print(i ,"present", s.count(i),"times")
+# print(res)
+
+"""8.wap to print the duplicate character without using inbuilt method :"""
+# s = "hello hii:"
+# res =""
+# dup =""
+# for i in s:
+#     if i not in res:
+#         res += i
+#     else:
+#         dup += i
+# print(dup)
+
+"""9. wap to return the index of the specified character :"""
+# s="hello"
+# char = "o"
+# for i in range(len(s)):
+#     if s[i] == char:
+#         print(i)
+
+"""10. wap to print the first occcurence of given """
+# s="hello"
+# char="l"
+# for i in range(len(s)):
+#     if s[i] == char:
+#         print(i)
+#         break
+
+"""11.wap to print the second occurence of given string:"""
+# s = "hello"
+# char="l"
+# count=0
+# for i in range(len(s)):
+#     if s[i] == char:
+#         count += 1
+#         if count ==2:
+#             print(i)
+#             break
+
+"""12. wap to create a list of tuples with word and it's length pair :"""
+# s="we are reading python"
+# x=s.split()
+# l=[]
+# for i in x:
+#     l.append((i,len(i)))
+# print(l)
+
+"""~~~~~~~~~~~~~~ DICTIONARY ~~~~~~~~~~~~~~~~~~~~~ """
+"""1. wap """
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
