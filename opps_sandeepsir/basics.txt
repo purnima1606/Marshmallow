@@ -1,0 +1,4 @@
+1. module - a single python file (.py)
+2. Package - folder with __init__.py which has collection of python modules
+3. Library - Collection of packages
+4. Script - a module which is executed directly by utilizing other modules

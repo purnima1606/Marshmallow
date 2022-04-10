@@ -87,19 +87,19 @@ d = {word: word[::-1] if word.isdigit() else word for word in words}
 # Write a program to get the following output.
 # o/p : 2A2B3C1D2A1C1D
 
-s = "AABBCCCDAACD"
-i = 0
-res = s
-op = ""
-
-while i < len(s):
-    res = res.lstrip(s[i])
-    count = len(s) - len(res) - i
-    op += str(count) + s[i]
-    i += count
-
-
-print(op)
+# s = "AABBCCCDAACD"
+# i = 0
+# res = s
+# op = ""
+#
+# while i < len(s):
+#     res = res.lstrip(s[i])
+#     count = len(s) - len(res) - i
+#     op += str(count) + s[i]
+#     i += count
+#
+#
+# print(op)
 ###########################################################################
 # Write a program to get the following output from the list
 # [1, 2, 3, 4, 5, 6, 7, 8, 9]
