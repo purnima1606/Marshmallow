@@ -206,6 +206,157 @@
 #
 # print(add(3, 5))     # ******** $$$$$$$$$$$$$ 8 $$$$$$$$$$$$ ***********
 
+"""" Function,one program ,that to reverse the string """
+# method 1
+# def reverse_(s):
+#     print(s[::-1])
+#
+# reverse_("python")
+
+# method 2
+
+# def rev(s):
+#     res = ""
+#     for char in s:
+#         res = char + res
+#     return res
+#
+# print(rev("python"))
+
+""" program to print only even numbers from a list """
+
+# def even(l):
+#     for item in l:
+#         if item % 2 == 0:
+#             print(item, end=" ")
+#
+#
+# even([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])
+
+""" o/p = [10,7,4,1] """
+a = [1,2,3,4,5,6,7,8,9,10]
+
+# print(a[::-3])
+
+""" 
+a,b,c,d = 1,2,3,4,5
+a=1,b=2,c=[3,4],d=5
+a = ? ,b = ?, c= ?, d= ?
+"""
+#
+# a, b, *c, d =1, 2, 3, 4, 5
+# print(a, b, c, d)
+
+""" 10.Explain slicing """
+
+
+""" Take one string(using slicing method) he told to extract some characters in string """
+s1 = "python is simple language"
+
+# print(s1[:6])
+# print(s1[7:9])
+# print(s1[10:16])
+# print(s1[17:])
+#
+# print(s1[:9])
+# print(s1[:16])
+#
+# print(s1[1:6])
+# print(s1[2:9])
+# print(s1[7:13])
+# print(s1[13:16])
+
+
+# print(s1[-1:-9:-1])
+# print(s1[-10:-16:-1])
+#
+
+""" WAP to create random nummer """
+# import random
+#
+# print(random.randint(1, 101))
+
+# import time
+#
+# current_time = time.localtime(time.time())
+# print(current_time)
+
+"""
+1. self introduction 
+2. Tell me about your frame work which you used in your project 
+4. Difference between smoke and sanity testing 
+6. Can you tell about Defect life cycle 
+
+7. i have 50 test cases , you are doing Regression testing , SO you have only 2 days of time to complete the 
+  regression testing . the scenario is , you has to complete the regression testing with in end of day(today).
+  Tomorrow is the release and you only the QA in your team , and you have 50 test cases . So how you can complete
+  regression testing with in the day 
+  
+8. difference between list and dict 
+9. difference between .py and .pyc
+
+
+
+11. what are the keywords available in Python ?
+import, True, False, is, in, not, if, else, elif, def, for, while, lambda, global, nonlocal, break, continue, pass, 
+None, class, return, yield, try, except, finally, and, or, 
+
+12.How to combine data frames ?
+
+15.Explain OPP 
+16.what is polymerphism ?
+
+17.What is data Abstraction ? 
+18.What is data Encapsulation ?
+19.Explain Inheritance 
+
+24.how you can going to sink the code from local repository to global repository ?
+25.How can you revert the codes ?
+
+
+27.what is sql ?
+28.Find the 2nd highest sal and details of the employee from employee dynamic table 
+
+
+"""
+
+"""
+keyword :-
+if , else, elif, import ,True, False, None, break, continue, pass, def, class, return, yield, and, or, in, is, not, 
+
+"""
+# import keyword
+#
+# # print(help(keyword))
+# print(keyword.kwlist)
+#
+# print(keyword.iskeyword("if"))
+
+
+"""
+13.6 reversed the item i.e o/p should be Singh Saurabh
+
+s = "Saurabh Singh"
+
+# 13.4 remove the duplicate items
+print(set(s))
+res = ""
+for char in s:
+    if char not in res:
+        res += char
+
+print(res)
+# 13.5 remove the spaces in between
+
+res = s.replace(" ", "")
+print(res)
+
+# 13.6 reversed the item i.e o/p should be Singh Saurabh
+print(s[::-1])
+
+for char in reversed(s):
+    print(char, end="")
+"""
 
 
 
