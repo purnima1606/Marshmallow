@@ -1,0 +1,117 @@
+
+In this article, we will know the HTML Image, how to add the image in HTML, along with knowing its implementation
+& usage through the examples. In earlier times, the web pages only contains textual contents,
+which made them appear quite boring and uninteresting. Fortunately,
+it wasn’t long enough that the ability to embed images on web pages was added for users.
+In this article, we will know how to add images to the web page that will make the website attractive &
+various methods to insert the images.
+
+There are 2 ways to insert the images into a webpage:
+
+By providing a full path or address (URL) to access an internet file.
+By providing the file path relative to the location of the current web page file.
+
+We will first discuss inserting the image to the webpage & simultaneously, we will understand both the above approaches.
+
+
+Adding images on a webpage: The <img> tag is used to add or embed the images to a webpage/website.
+The “img” tag is an empty tag, which means it can contain only a list of attributes and it has no closing tag.
+The addition of the images improves the quality along with enhancing the design structure, appearance of the webpage.
+Nowadays, a website does not directly add images to a web page,
+as the images are linked to web pages by using the <img> tag which holds space for the image.
+
+Syntax:
+
+<img src="url" alt="some_text" width="" height="">
+
+Attribute: The <img> tag has following attributes:
+
+src: It is used to specify the path to the image.
+
+alt: It is used to specify an alternate text for the image.
+     It is useful as it informs the user about what the image means and also due to any network issue
+     if the image cannot be displayed then this alternate text will be displayed.
+
+crossorigin: It is used to import images from third-party sites that allow cross-origin access to be used with canvas.
+
+height: It is used to specify the height of the image.
+
+width: It is used to specify the width of the image.
+
+ismap: It is used to specify an image as a server-side image map.
+
+loading: It is used to specify whether a browser should defer the loading of images
+         until some conditions are met or load an image immediately.
+
+longdesc: It is used to specify a URL to a detailed description of an image.
+
+referrerpolicy: It is used to specify which referrer information to use when fetching an image
+                i.e. no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url.
+
+sizes: It is used to specify image sizes for different page layouts.
+
+srcset: It is used to specify a list of image files to use in different situations.
+
+usemap: It is used to specify an image as a client-side image map.
+
+src: The src stands for source.
+     Every image has an src attribute which tells the browser where to find the image you want to display.
+     The URL of the image provided points to the location where the image is stored.
+     When the webpage loads for the first time,
+     then the browser gets the image from a web server and inserts it into the page.
+     If the image is not spotted by the browser then users will get a broken link icon.
+     It might be possible if the file path is wrong or the image got deleted from that location.
+
+
+alt: If the image cannot be displayed then the alt attribute acts as an alternative description for the image.
+     The value of the alt attribute is a user-defined text. It generally happens when the user, for some reason,
+     cannot view it due to a slow internet connection or an error in the src attribute,
+     or if the user uses a screen reader.
+
+Setting width and height of Image: The width and height attributes are used to specify the height and width of an image.
+     The attribute values are specified in pixels by default. The width and height attributes are always declared in pixels.
+     Please refer to the How to set the width and height of an image using HTML? article for further details.
+
+
+Adding titles to Image: Along with the images,
+     titles can also be added to images to provide further information related to the inserted image.
+     For inserting a title, the title attribute is used.
+     Please refer to the HTML | title Attribute article for further details.
+
+Setting style to the Image: In this example, we are using the border property to decorate the image.
+    By default, every picture has a border around it. By using the border attribute,
+    the thickness of the border can be changed. A thickness of “0” means that there will be no border around the picture.
+    Please refer to the HTML | <img> border Attribute for further details.
+
+Aligning an Image:  By default, an image is aligned on the left side of the page,
+    but it can be aligned to the centre or right using the align attribute.
+    Please refer to the HTML | <img> align Attribute for further details.
+
+Aligning the image to the right
+
+Adding Image as a Link: An image can work as a link with a URL embedded in it.
+    It can be done by using the “img” tag inside an “a” tag.
+    We need to specify the file path in order to render the image on the webpage.
+    File paths are used to link external resources such as images, videos,
+    style sheets, JavaScript, displaying other web pages, etc.
+    To insert a file on a web page its source must be known.
+
+File paths are of two types:
+
+Absolute File Paths: It always contains the root element along with
+                     the complete directory list required to locate the file.
+Relative File Paths: It is the hierarchical path representation that locates the file
+                     or folder on a file system beginning from the current directory.
+
+ Using Image as a background: An image can be used as a background for a webpage.
+                              For this, we use the background-image property of CSS.
+                              Please refer to the HTML | <body> background Attribute for further details.
+
+
+S.No.      Abbreviation              File Type                                        Extension
+1. 	        PNG                      Portable Network Graphics.	                      .png
+2.	        JPEG.	                 Joint Photographic Expert Group image.	          .jpg, .jpeg, .jfif, .pjpeg, .pjp
+3. 	        SVG                      Scalable Vector Graphics.	                      .svg.
+4.          GIF                      Graphics Interchange Format.	                  .gif
+5.	        ICO                      Microsoft Icon.	                              .ico, .cur
+6.	        APNG                     Animated Portable Network Graphics.	          .apng

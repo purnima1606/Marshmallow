@@ -40,4 +40,17 @@ functions"""
 # names = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'google', 'gmail', 'gmail', 'gmail']
 
 """ 10. Grouping files with same extensions """
-# files = ['apple.txt', 'yahoo.pdf', 'gmail.pdf', 'google.txt', 'amazon.pdf', 'facebook.txt', 'flipkart.pdf']
+files = ['apple.txt', 'yahoo.pdf', 'gmail.pdf', 'google.txt', 'amazon.pdf', 'facebook.txt', 'flipkart.pdf']
+d = {}
+
+for i in files:
+    l = i.split(".")
+    if l[0] not in d:
+        d[l[1]] = [l[0]]
+    else:
+        d[l[1]] = d.append([l[0]])
+
+print(d)
+
+
+
