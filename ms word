@@ -1,0 +1,107 @@
+Ms Word Basic:
+    1. Create New Files :- [Ctrl + N]
+    2. Open File [ctrl + O]
+    3.Save a file [ctrl + s]
+    4. close a file [Alt + F4]
+    5. Navigate in a file
+    6. Word interface
+
+
+Formating text :
+    1. Font
+    2. Font Style
+        Bold [ctrl + b]
+        italic [ctrl + i]
+        Underline
+
+
+    3. Font Color
+    4. Font Size    = Ctrl + Shift + F
+
+    5. Text Highlighter Color
+    6. Clear Formats
+    7. Change Case
+
+Editing text :
+    1. cut [ctrl + x]
+    2.copy [ctrl + c]
+    3.paste [ctrl + v]
+    4.undo [ctrl + z]
+         select line and put color and reverse back.
+    5.Redo [ctrl + y]
+        same work reverse i.e color lines.
+    6.Find [ctrl + F]
+        Find some word in ms file.
+    7.Replace [ctrl + H]
+        Replace some word with new word i.e online Replace with offline
+
+   =rand(2,2)
+   shift and right arrow key
+   ctrl + Shift and right arrow key (select one word at a time)
+
+Paragraphs:
+    1. paragraph formatting
+        a. Align Left [Ctrl + L]
+        b. Align Center [Ctrl + E]
+        c. Align Right [Ctrl + R]
+        d. Justify [Ctrl + J]
+    2.Line Spacing
+    3.Indents
+        a.Left Indents
+        b.Right Indents
+    4.Sorting : paragraph, Heading, diffrent fileds(table) and assending or desending order
+        sorting, Bullets and Numbering
+            Apple
+            Denmark
+            Estate
+            Finland
+            Germany
+            Boy
+            Capital
+
+    5.paragraph Shading
+    6.Borders
+
+Spelling and Grammer:
+    1.Spelling and Grammer   :- F7 and Review
+        htis si nto correct statment --> this is not correct statement
+    2.Thesaurus
+        this is beautiful dog --> beautiful change with lovely
+    3.word count
+         how many word in your sentence
+         pages
+
+Customize Ribbon:
+1.create your own tab: we can create our own Tab and keep here options i.e copy cut paste......
+2.Add commands to tab : cut, paste , copy
+3.Add commands to QAT(Quick Acsess Toolbar) i.e speak bar
+
+Templates: company logo and contact details i.e number and email id..
+           save as word templates
+
+Auto correct Feature: Auto correct settings --> Options --> proofing --> Auto correct Option
+
+Table 1:
+1. insert table
+    : banded rows (heading color), banded colums (color alternate row and colum)
+2. Table Style
+3.Table style option
+
+
+4.insert Rows And Colums
+5. Cut,Copy, Paste Row
+6.Delete Rows and Colums
+
+
+7. split and Merge cells
+8.Resize Rows and Colums
+9.Alignment
+10.Formulas
+
+
+
+
+
+
+
+

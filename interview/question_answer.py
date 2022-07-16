@@ -1,4 +1,10 @@
 """ ** 1. Write a program to find the length of the string without using inbuilt function (len) **"""
+# s = "python is programing"
+# count_ = 0
+# for i in s:
+#     count_ += 1
+# print(count_)
+
 # string_ = "hello how are you"
 # count = 0
 # for char in string_:
@@ -7,6 +13,10 @@
 # print(len(string_))            # 17
 
 """ **2. Write a program to reverse a string without using any inbuilt functions.**"""
+# s = "lion is king"
+# for i in reversed(s):
+#     print(i , end="")  # gnik si noil
+
 # s = "hello world hi how are you"
 # res = ""
 # for char in s:
@@ -19,9 +29,22 @@
 
 """**3. Write a program to replace one string with another. e.g. "Hello World" replaces "World" with "Universe".**"""
 # s = "Hello World"
+# r = s.replace("World", "Universe")
+# print(r)
+
+# s = "Hello World"
 # print(s.replace("Hello World", "universe"))      # universe
 
 """**4. How to convert a string to a list and vice-versa.**"""
+
+# s = "python is easy language"
+# res = []
+# for i in s.split():
+#     res.append(i)
+#
+# print(res)
+# print(" ".join(res))
+
 # s = "hi how are you"
 # # string to list
 # list_ = s.split()
@@ -31,21 +54,48 @@
 # print(s1)
 
 """**5. Convert the string "Hello welcome to Python" to a comma separated string.**"""
+# s = "Hello welcome to Python"
+# res = s.split()
+# print(",".join(res)) # Hello,welcome,to,Python
+
+
 # s = "Hello welcome to python"
 # l = s.split()
 # res = ",".join(l)
 # print(res)            # Hello,welcome,to,python
 
 """**6. Write a program to print alternate characters in a string.**"""
+# s = "Hello welcome to Python"
+# print(s[::2])    # Hlowloet yhn
+
 # s = "hi how are you"
 # print(s[::2])   # h o r o
 
 """**7. Write a Program to print ascii values of the characters present in a string.**"""
+# s = "hello how are u"
+# for i in s:
+#     print(i, ord(i))
+
+
 # s = "programming is fun"
 # for char in s:
 #     print(char, ord(char))
 
+
 """**8. Write a function to convert upper case to lower case and vice-versa without using inbuilt methods.**"""
+# s = "HoW aRe U"
+# res = ""
+# for i in s:
+#     if i.islower():
+#         res += i.upper()
+#     elif i.isupper():
+#         res += i.lower()
+#     else:
+#         res += i
+#
+# print(res)
+
+
 # def upper_lower(n):
 #     res = ""
 #     for char in n:
@@ -61,17 +111,40 @@
 # print(upper_lower("HeLLo 123WorLD"))    # hEllO 123wORld
 
 """**9. Write a program to swap two numbers without using the 3rd variable.**"""
+# a , b = 10, 20
+# print(a, b)
+# a, b = b, a
+# print(a, b)
+
 # a, b = 10, 20
 # print(a, b)
 # a, b = 20, 10
 # print(a, b)
 
 """**10. Write a program to merge two different lists.**"""
+
+# l1 = [1,2,3]
+# l2 = [4,5,6]
+# # print(l1+l2)  # [1, 2, 3, 4, 5, 6]
+# # print([*l1,*l2])  # [1, 2, 3, 4, 5, 6]
+# print(*l1,*l2)  # 1 2 3 4 5 6  i.e (1 2 3 4 5 6)
+
 # l1 = [1, 2, 3]
 # l2 = [4, 5, 6]
 # l3 = [*l1, *l2]
 # print(l3)    # [1, 2, 3, 4, 5, 6]
+
 """**11. Write a program to read a random line in a file. (ex. 50, 65, 78th line)**"""
+# path = "file path"
+# n = int (input("enter the line number:"))
+# count_ = 0
+# with open(path) as file:
+#     for line in file:
+#         count_ += 1
+#         if count_ == n:
+#             print(line)
+
+
 # islice
 # import os
 # path = r"C:\Users\user\PycharmProjects\Marshmallow\files\sample.log"
@@ -92,7 +165,7 @@
 #     lines = islice(file, 4, 8)
 #     for line in lines:
 #         print(line)             # run
-
+# ****************************************************
 """**13 Program to print the last "N" lines of a file.**"""
 # from itertools import islice
 # path = r"C:\Users\user\PycharmProjects\Marshmallow\files\sample.log"
@@ -106,7 +179,7 @@
 #     lines = islice(file, count-n, count)
 #     for line in lines:
 #         print(line)                 # run
-
+# ****************************************************
 """**14. Write a program to check if the given string is Palindrome or not without using reversed method.**"""
 
 # s = input("enter any string :")
@@ -749,6 +822,13 @@ names = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'facebook', 'apple', 'gma
 """**83 Write a program to count the number of commented lines in a text file**"""
 # """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """**84 Write a program to check if the year is leap year or not**"""
+# year = int(input("enter year"))
+#
+# if year % 4 == 0 or year % 400 == 0:
+#     print("leap year")
+# else:
+#     print("Not leap year")
+
 
 """**85 Linear Search**"""
 # *******************************************************************************

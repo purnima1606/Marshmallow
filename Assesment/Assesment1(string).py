@@ -50,7 +50,14 @@ res = ""
 
 for i in s:
     if "a" <= i <= "z":
-        res += char(ord(i)-32)
+        res += chr(ord(i)-32)
+    elif "A" <= i <= "Z":
+        res += chr(ord(i)+32)
+    else:
+        res += i
+
+print(res)
+
 # string = "VS PytHon"
 # res = ""
 
@@ -79,6 +86,14 @@ for i in s:
 
 """ 4. WAP to create a string with only consonants presents in the string """
 
+s = "pYtHoN iS pOgRmINg LaNgUaGe"
+res = ""
+for i in s:
+    if i not in "AEIOUaeiou":
+        res += i
+
+print(res)
+
 # string = "Million Dollar Smile"
 # res = ""
 #
@@ -97,6 +112,14 @@ for i in s:
 
 
 """ 5. WAP to search for a character in the string & return its first occurrence position """
+
+s = "welcome to banglore"
+n = input("inter your character")
+
+for index, i in enumerate(s):
+    if i == n:
+        print(i, index)
+        break
 
 # s = "programming"
 # find_ = "m"
@@ -123,6 +146,11 @@ for i in s:
 
 
 """ 6. WAP to print the character and its ascii value if the character is a vowel in the string """
+s = "welcome to banglore"
+
+for i in s:
+    if i in "AEIOUaeiou":
+        print(i,ord(i))
 
 # s = "she sells sea shells on the sea shore"
 #
@@ -132,6 +160,11 @@ for i in s:
 
 
 """ 7. WAP to print word & its length in string """
+# s = "welcome to banglore"
+#
+# for i in s.split():
+#     print(i , len(i))
+
 
 # s = "she sells sea shells on the sea shore"
 # l = s.split()
@@ -140,6 +173,11 @@ for i in s:
 
 
 """ 8. WAP to print the words that are starting with vowels in the string """
+
+# s = " hello how are you? i hope u are fine"
+# for i in s.split():
+#     if i[0] in "aeiouAEIOU":
+#         print(i)
 
 # s = "She is very good actor"
 # l = s.split()
@@ -168,8 +206,8 @@ for i in s:
 
 """ 10. WAP to reverse a string without using slicing """
 
-s = "Python is high level programming language"
-
+# s = "Python is high level programming language"
+#
 # res = ""
 # for i in s:
 #     res = i + res
