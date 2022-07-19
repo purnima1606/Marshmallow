@@ -346,6 +346,10 @@ l = ["hello", 674, "hii", 983, "python"]  # **********
 """ **24 Write a python program to get the below output**"""
 sentence = "Hi How are you"
 # o/p should be "ouy era woH iH"
+res = []
+
+for item in sentence.split():
+    
 
 
 """**25 Write a lambda function to add two numbers (a, b)**"""
