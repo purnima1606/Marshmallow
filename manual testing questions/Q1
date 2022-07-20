@@ -8,12 +8,16 @@ phases of STLC and SDLC
     set uo environment
     execute test case
 
-regration suit conten 1000 test case what is your approch if u have 18hr
+regration suit contain 1000 test case what is your approch if u have 18hr
 test scenario and test cases example
     login page - text area - test scenario
     username and password - test case
 
 what is bug and defect
+what is progration testing
+tell me the bug life cycle (what is steps, how to find out ,how wecan close the bug?)
+
+
 
 smoke testing
 
@@ -26,3 +30,27 @@ Q1. one text box you have to enter 7 number what are the ways to enter 7
     in chrome browser if u enter the number then u have a kind of up and down button over there u can click on that then 7 number will be printed there
 
 Q2. you have a calender tell me 5 positive test cases and 5 negative test cases
+
+Q3. you have 3 option
+11 - 18
+19 - 30
+30 - 30+
+what is technical issue?
+
+agile cerimany
+    spring planing
+    sprint review what happen in this? what everything ting completed in a one sprint that u are going to demo
+    retro review
+    daily stan up metting
+
+automation have u work on this or u just learn this thing?
+what's test management tool u  are using wrirting a test cases - jira
+for reporting the bug  what platform  u are using - jira
+integration testing and system testing
+module testing and system testing
+
+joins in SQL?
+diffrence between primary and forign key
+
+
+
