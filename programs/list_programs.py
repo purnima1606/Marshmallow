@@ -49,6 +49,7 @@ print(l)
 # print(l)
 
 """Python | Reversing a List"""
+
 # l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # # method 1
 # for i in reversed(l):
@@ -64,6 +65,7 @@ print(l)
 # print(res)
 
 """Python program to find sum of elements in list"""
+
 # l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 #
 # # method 1:
@@ -77,6 +79,7 @@ print(l)
 
 
 """ Python | Multiply all numbers in the list"""
+
 # l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # res = 1
 # for i in l:
@@ -100,9 +103,24 @@ print(l)
 
 """ Python program to find largest number in a list """
 
-""" Python program to find second largest number in a list
-Python program to find N largest elements from a list
-Python program to print even numbers in a list"""
+# l = [1,2,3,4,5]
+# # method 1:
+# print(max(l))
+#
+# # method 2:
+# max_ = l[-1]
+# for i in l:
+#     if i > max_:
+#         max_ = i
+# print(max_)
+
+""" Python program to find second largest number in a list"""
+
+
+"""Python program to find N largest elements from a list"""
+
+
+"""Python program to print even numbers in a list"""
 
 # l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # for i in l:
@@ -170,6 +188,7 @@ Python program to print even numbers in a list"""
 
 """ Python – Remove empty List from List"""
 
+
 """ Python | Cloning or Copying a list """
 
 # l = [1, 2, 3, 4, 5, 6]
@@ -186,6 +205,7 @@ Python program to print even numbers in a list"""
 
 """ Python | Remove empty tuples from a list """
 
+
 """ Python | Program to print duplicates from a list of integers """
 
 # l = [1,2,3,4,56,7,8,5,3,5,2,8,9,6,5]
@@ -195,6 +215,7 @@ Python program to print even numbers in a list"""
 
 
 """Python program to find Cumulative sum of a list"""
+
 
 """Python | Sum of number digits in List"""
 
@@ -211,6 +232,7 @@ Python program to print even numbers in a list"""
 
 
 """Break a list into chunks of size N in Python"""
+
 
 """ Python | Sort the values of first list using second list"""
 

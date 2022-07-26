@@ -21,7 +21,9 @@
 
 """ Python Program for array rotation """
 
+
 """ Python Program for Reversal algorithm for array rotation """
+
 
 """ Python Program to Split the array and add the first part to the end """
 
@@ -33,7 +35,9 @@
 
 """ Python Program for Find reminder of array multiplication divided by n """
 
+
 """ Python Program to check if given array is Monotonic """
+
 # a = [2,4,5,3,6,8,5,9,3]
 # a = [2,4,5,6,7,8,9]
 # count_ =0
