@@ -90,7 +90,7 @@ for i in range(1, n+1):
     o = oct(i)
     h = hex(i)
     b = bin(i)
-    print(i, o[2:], h[2:], b[2:])
+    print("%6d"%i,o[2:], h[2:], b[2:])
 
 
 
