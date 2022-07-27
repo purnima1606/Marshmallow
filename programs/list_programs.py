@@ -231,8 +231,8 @@ print(l)
 #     print(i,res)
 
 
-"""Break a list into chunks of size N in Python"""
+""" Break a list into chunks of size N in Python """
 
 
-""" Python | Sort the values of first list using second list"""
+""" Python | Sort the values of first list using second list """
 
