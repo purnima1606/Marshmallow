@@ -1,0 +1,102 @@
+******************************** Introduction To PYTHON ***************************************
+
+Python is a widely used general-purpose, high level programming language.
+ It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation.
+ It was designed with an emphasis on code readability,
+ and its syntax allows programmers to express their concepts in fewer lines of code.
+
+Python is a programming language that lets you work quickly and integrate systems more efficiently.
+Reason for increasing popularity
+
+Emphasis on code readability, shorter codes, ease of writing
+Programmers can express logical concepts in fewer lines of code in comparison to languages such as C++ or Java.
+Python supports multiple programming paradigms, like object-oriented, imperative and functional programming or procedural.
+There exists inbuilt functions for almost all of the frequently used concepts.
+Philosophy is “Simplicity is the best”.
+
+******************************** LANGUAGE FEATURES********************************************
+
+* Interpreted:
+    There are no separate compilation and execution steps like C and C++.
+    Directly run the program from the source code.
+    Internally, Python converts the source code into an intermediate form called bytecodes which is then translated into native language of specific computer to run it.
+    No need to worry about linking and loading with libraries, etc.
+
+* Platform Independent:
+    Python programs can be developed and executed on multiple operating system platforms.
+    Python can be used on Linux, Windows, Macintosh, Solaris and many more.
+
+* Free and Open Source; Redistributable
+
+* High-level Language:
+    In Python, no need to take care about low-level details such as managing the memory used by the program.
+
+* Simple:
+    Closer to English language;Easy to Learn
+    More emphasis on the solution to the problem rather than the syntax
+
+* Embeddable:
+    Python can be used within C/C++ program to give scripting capabilities for the program’s users.
+
+Robust:
+    Exceptional handling features
+    Memory management techniques in built
+
+* Rich Library Support:
+    The Python Standard Library is very vast.
+    Known as the “batteries included” philosophy of Python ;It can help do various things involving regular expressions, documentation generation, unit testing, threading, databases, web browsers, CGI, email, XML, HTML, WAV files, cryptography, GUI and many more.
+
+    Besides the standard library, there are various other high-quality libraries
+    such as the Python Imaging Library which is an amazingly simple image manipulation library.
+
+
+***************Python Language advantages and applications *****************************************
+
+Python is a high-level, interpreted, and general-purpose dynamic programming language
+that focuses on code readability. It generally has small programs when compared to Java and C.
+It was founded in 1991 by developer Guido Van Rossum. Python ranks among the most popular and
+fastest-growing languages in the world. Python is a powerful, flexible, and easy-to-use language.
+In addition, the python community is very active.
+It is used in many organizations as it supports multiple programming paradigms.
+ It also performs automatic memory management.
+
+* Advantages:
+    Presence of third-party modules
+    Extensive support libraries(NumPy for numerical calculations, Pandas for data analytics, etc.)
+    Open source and large active community base
+    Versatile, Easy to read, learn and write
+    User-friendly data structures
+    High-level language
+    Dynamically typed language(No need to mention data type based on the value assigned, it takes data type)
+    Object-Oriented and Procedural  Programming language
+    Portable and Interactive
+    Ideal for prototypes – provide more functionality with less coding
+    Highly Efficient(Python’s clean object-oriented design provides enhanced process control, and the language is equipped with excellent text processing and integration capabilities, as well as its own unit testing framework, which makes it more efficient.)
+    Internet of Things(IoT) Opportunities
+    Interpreted Language
+    Portable across Operating systems
+
+* Applications:
+
+    GUI-based desktop applications
+    Graphic design, image processing applications, Games, and Scientific/ computational Applications
+    Web frameworks and applications
+    Enterprise and Business applications
+    Operating Systems
+    Education
+    Database Access
+    Language Development
+    Prototyping
+    Software Development
+
+* Organizations using Python :
+    Google(Components of Google spider and Search Engine)
+    Yahoo(Maps)
+    YouTube
+    Mozilla
+    Dropbox
+    Microsoft
+    Cisco
+    Spotify
+    Quora
+    Facebook
