@@ -153,3 +153,33 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc.
 """
 
+# --------------------------------------------------------------------------------------------------------------------------------------------------------
+""" Summation of primes: Problem 10
+The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+Find the sum of all the primes below two million. 
+"""
+# sum_ = 0
+# a = 0
+# for i in range(2,200000):
+#     for
+#     if a % i == 0:
+#         break
+# else:
+#     sum_ +=
+#
+# print(sum_)
+#
+#     # if sum_ > 2000:
+#     #     print(sum_)
+#     #     break
+
+
+
+
+
+
+
+
+
+
