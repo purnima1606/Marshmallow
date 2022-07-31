@@ -28,6 +28,18 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 find the sum of the even-valued terms.
 """
 
+# sum_, a, b, c = 0, 0, 1, 0
+#
+# for _ in range(400000):
+#     # print(c, end=" ")
+#     if c % 2 == 0:
+#         sum_ += c
+#     a = b
+#     b = c
+#     c = a + b
+#
+# print(sum_)
+
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -52,6 +64,18 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 """
+# a = 20
+#
+# while True:
+#     count_ = 0
+#     a += 1
+#     for i in range(1,21):
+#         if a % i == 0:
+#             count_ += 1
+#     if count_ == 20:
+#         print(a)
+#         break
+
 
 
 
@@ -68,7 +92,17 @@ Hence the difference between the sum of the squares of the first ten natural num
 
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 """
-
+# squ_sum = 0
+# sum_squ = 0
+#
+# for i in range(1,101):
+#     squ_sum += i
+#     sum_squ += i ** 2
+#
+# squ_sum = squ_sum ** 2
+# differece_ = squ_sum - sum_squ
+#
+# print(differece_)  # 25164150
 
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -105,3 +139,17 @@ The four adjacent digits in the 1000-digit number that have the greatest product
 
 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 """
+
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+""" Special Pythagorean triplet: Problem 9
+A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
+
+a2 + b2 = c2
+For example, 32 + 42 = 9 + 16 = 25 = 52.
+
+There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+Find the product abc.
+"""
+
