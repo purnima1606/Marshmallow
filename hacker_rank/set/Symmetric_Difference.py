@@ -63,8 +63,5 @@ n = int(input())
 s2 = set(map(int, input().split()))
 print(s2)
 res = s1.symmetric_difference(s2)
-for i in res:
-    if 0 < i <= 9
-        
-
+for i in sorted(res):
     print(i)
