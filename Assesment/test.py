@@ -84,14 +84,14 @@
 
 # *********************************************************
 
-n = int(input("enter the value of n:"))
-# binary = 0
-for i in range(1, n+1):
-    o = oct(i)
-    h = hex(i)
-    b = bin(i)
-    print("%6d"%i,o[2:], h[2:], b[2:])
-
+# n = int(input("enter the value of n:"))
+# # binary = 0
+# for i in range(1, n+1):
+#     o = oct(i)
+#     h = hex(i)
+#     b = bin(i)
+#     print("%6d"%i,o[2:], h[2:], b[2:])
+#
 
 
 
@@ -107,3 +107,9 @@ for i in range(1, n+1):
 # # print(type(p))
 # print(p[2:])
 # # print(bin(n), hex(n))
+
+# ___________________________________________________________________________________________________________________
+s = "HelloWorld"
+for i in s:
+    if "A" <= i <= "Z":
+        print(i, end=" ")
