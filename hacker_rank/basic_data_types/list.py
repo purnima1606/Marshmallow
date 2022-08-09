@@ -65,24 +65,32 @@ Sample Output 0
 
 """
 # if __name__ == '__main__':
-N = int(input())
-res = []
+# N = int(input())
+# res = []
+#
+# for _ in range(N):
+#     command = input().split()
+#
+#     if command[0] == "insert":
+#         res.insert(int(command[1]), int(command[-1]))
+#     elif command[0] == "print":
+#         print(res)
+#     elif command[0] == "append":
+#         res.append(int(command[-1]))
+#     elif command[0] == "remove":
+#         res.remove(int(command[-1]))
+#     elif command[0] == "sort":
+#         res.sort()
+#     elif command[0] == "pop":
+#         res.pop()
+#     else:
+#         res.reverse()
 
-for _ in range(N):
-    command = input().split()
-
-    if command[0] == "insert":
-        res.insert(int(command[1]), int(command[-1]))
-    elif command[0] == "print":
-        print(res)
-    elif command[0] == "append":
-        res.append(int(command[-1]))
-    elif command[0] == "remove":
-        res.remove(int(command[-1]))
-    elif command[0] == "sort":
-        res.sort()
-    elif command[0] == "pop":
-        res.pop()
-    else:
-        res.reverse()
+# swapcase() => only deal with alpha
+s = 'hello123'
+print(s.isdigit())
+print(s.isalpha())
+print(s.isalnum())
+print(s.isupper())  # --> only deal with alpha
+print(s.islower())  # --> only deal with alpha
 
