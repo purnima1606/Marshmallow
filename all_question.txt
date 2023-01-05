@@ -1,0 +1,605 @@
+""" 1. WAP to print "Bangalore" 10 times without using loop """
+""" 2. WAP to count the number of digits & alphabets in the string """
+
+# string = "hai1234python23"
+"""3 WAP to create a string by swapping the cases of the characters without using built in method """
+# string = "VS PytHon"
+""" 4. WAP to create a string with only consonants presents in the string """
+
+# string = "Million Dollar Smile"
+""" 5. WAP to search for a character in the string & return its first occurrence position """
+
+# s = "programming"
+#
+""" 6. WAP to print the character and its ascii value if the character is a vowel in the string """
+
+# s = "she sells sea shells on the sea shore"
+#
+# -------------------------------------------------------------------------------------------------------------------
+""" 7. WAP to print word & its length in string """
+
+# s = "she sells sea shells on the sea shore"
+
+""" 8. WAP to print the words that are starting with vowels in the string """
+
+# s = "She is very good actor"
+
+""" 9. WAP to count the number of characters in the string with & without using built-in-method """
+
+# s = "She is very beautiful"
+
+""" 10. WAP to reverse a string with & without using slicing """
+
+s = "Python is high level programming language"
+
+//####################################################
+
+""" 1. WAP to remove all the duplicate elements in the list """
+
+# names = ['apple', "google", "apple", "yahoo", "google"]
+#
+""" 2. WAP to print all numeric values in a list """
+
+# items = ['apple', 1.2, "google", "12.6", 26, "734"]
+
+
+""" 3. WAP to sum all even numbers in the given string """
+
+# sentence = "hello 123 world 567 welcome to 9724 python"
+
+""" 4. WAP to create a list with all the languages which starts with "p" or "P" """
+
+# languages = ["Python", "Java", "Perl", "PHP", "python", "JS", "c++", "JS", "python", "ruby"]
+#
+""" 4.1 WAP to create a set with all the languages which starts with "p" or "P" """
+
+# languages = ["Python", "Java", "Perl", "PHP", "python", "JS", "c++", "JS", "python", "ruby"]
+
+
+""" 5. Build a list with only even length string """
+
+# names = ["apple", "google", "yahoo", "facebook", "yelp", "flipkart", "gmail", "instagram", "microsoft"]
+#
+
+""" 6. Reverse the item of a list if the item is of odd length string otherwise keep the item as it is """
+
+# names = ["apple", "google", "yahoo", "facebook", "yelp", "flipkart", "gmail", "instagram", "microsoft"]
+
+""" 7. WAP to print the sum of entire list and sum of only internal list """
+
+# l = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+#
+""" 8. WAP to print list of Prime numbers between 1 - 100 """
+
+""" 9. WAP to reverse the list as below """
+
+# words = ["hi", "hello", "pytho"]
+# # output = ['nohtyp', 'olleh', 'ih']
+#
+""" 10. WAP to rotate item of the list """
+item = ['apple', 1.2, 'google', "12.6", 26, '100']
+k = 2
+# output = [26, '100', 'apple', 1.2, 'google', '12.6']
+
+""" WAP to fetch all values from 01-05-2000 to 31-10-2020"""
+data = ['12-01-1993', '31-10-1994', '01-05-2000', '21-01-2023', '31-10-2005', '01-05-2006', '12-01-1992', '01-01-2020',
+        '21-01-1993', '11-10-1994', '01-01-2001', '15-01-2002', '30-10-2003', '01-05-1996', '12-01-1990', '11-11-2019']
+
+// dictionary ###########################################
+
+""" 1. WAP to print the number of occurrence of characters in a string without using built-in-functions """
+# s = "helloworld"
+
+""" 2. WAP to get the indexes of each item in the below list """
+
+# names = ["apple", "google", "apple", "yahoo", "yahoo", "google", 'gmail', 'gmail', 'gmail']
+# # output  = {'apple': [0, 2], 'google': [1, 5], 'yahoo': [3, 4], 'gmail': [6, 7, 8]}
+
+""" 3. Grouping files with same extensions """
+# files = ["apple.txt", 'yahoo.pdf', 'gmail.pdf', 'google.txt', 'amazon.pdf', 'facebook.txt', 'flipkart.pdf']
+
+
+""" 4. WAP to create a dictionary with only the repeated characters & count of the same """
+
+# s = "hello world"
+
+
+""" 5. WAP to reverse the values in the dictionary if the value is of type string """
+# d = {"a": 'hello', 'b': 100, 'c': 10.1, 'd': 'world'}
+
+""" 6. WAP to get all the duplicate items & the number of times the item is repeated in the list """
+# names = ["apple", "google", "apple", "yahoo", "google", "gmail", 'gmail', 'gmail', 'gmail']
+
+""" 7. Grouping flowers & animals in the below list """
+
+# items = ['lotus-flower', 'lily-flower', 'cat-animal', 'sunflower-flower', 'dog-animal']
+
+""" 8. Grouping even & odd numbers """
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# # output = {1:[1, 3, 5, 7, 9], 0:[2, 4, 6, 8, 10]}
+
+""" 9. WAP to crating dictionary of city & population pairs using dictionary comprehension """
+
+# cities = ["Tokyo", "Delhi", "Shanghai", "Sao Paulo", "Mumbai"]
+# population = ['38,001,000', '25,703,168', '23,740,778', '21,066,245', '21,042,538']
+#
+""" 10. WAP to flip keys & values """
+# d = {"a": 1, "b": 2, "c": 3, "d": 4}
+
+// LIST COMPREHENTION########################################################################
+
+""" 1. WA List comprehension to filter all the languages which starts with 'p' or "P" """
+# languages = ["Python", "Java", "Perl", "PHP", "Python", "JS", "C++", "JS", "Python", "Ruby"]
+#
+""" 2. WA List comprehension to filter-out those names which are less than 6 characters """
+# names = ["apple", "google", "yahoo", "gmail", "flipkart", "instagram", "microsoft"]
+#
+""" 3. WA list comprehension to reverse the item of a list if the item is of odd length string otherwise keep the item
+ as it is """
+# names = ["apple", "google", "yahoo", "facebook", "yelp", "flipkart", "gmail", "instagram", "microsoft"]
+#
+""" 4. WA list comprehension to raise the elements in the list to the power of their index """
+# a = [1, 2, 3, 4, 5]
+#
+
+""" 5. Build a list of tuples with string & its length pair using list comprehension """
+# names = ["apple", "google", "yahoo", "facebook", "yelp", "flipkart", "gmail", "instagram", "microsoft"]
+#
+""" 6.  WAP to print all numeric values in a list using list comprehension """
+# items = ["apple", 1.2, 'google', '12.6', 26, '100']
+#
+
+""" 7. WAP to rotate elements in the list """
+# items = ["apple", 1.2, 'google', '12.6', 26, '100']
+# n = 3
+
+""" 8. WAP to check if the elements in the second list is series of continuation of the items in the first list """
+# a = [10, 12, 14, 16, 18]
+# b = [20, 22, 24, 26, 28]
+
+""" 9. Find all max numbers from the below list """
+# numbers = [1, 2, 3, 0, 4, 3, 2, 4, 2, 1, 0, 4]
+
+""" 10. WA list comprehension to get a list of even numbers from 1-50 """
+
+// dictionary Comprehension ########################################
+
+""" 1. WAP to get the indexes of each item in the below list. """
+
+# names = ["apple", "google", "apple", "yahoo", "yahoo", 'google', 'gmail', 'gmail', 'gmail']
+# output should be: {'apple': [0, 2], 'google':[1, 5], 'yahoo':[3, 4], 'gmail': [6, 7, 8]}
+
+""" 2. Reverse the values in the dictionary if the value is of type string """
+# d = {'a': 'hello', 'b': 100, 'c': 10.1, 'd': 'world'}
+
+""" 3. WAP to get all the duplicate items & the number of time the item is repeated in the list """
+
+# names = ["apple", "google", "apple", "yahoo", "yahoo", 'google', 'gmail', 'gmail', 'gmail']
+#
+
+""" 4. Creating dictionary of city & population pairs using dictionary comprehension """
+
+# cities = ["Tokyo", "Delhi", "Shanghai", "Sao-Paulo", "Mumbai"]
+# population = ["38,001,00", '25,703,168', '23,740,778', '21,066,245', '21,042,538']
+
+""" 5. WAP to flip key & value """
+# d= {"a": "hello", "b": 100, "c": 10.1, "d": "world"}
+
+""" 6. Group even & odd index values with comprehension """
+# l = [1, 2, 2, 3, 4, 4, 5, 5, 5, 6, 7, 7, 8, 8, 8, 88, 99, 100]
+
+""" 7. Grouping both of the dictionary items in a single dictionary using comprehension """
+# D = {"names": "apple", "ID": 152778}
+# d = {"names": "apple", "ID": 657678}
+
+""" 8. Create a dictionary with the items in tuple as key & its unicode as value using comprehension """
+# T = (9, 56, 78, 123, 456)
+""" 9. Create a dictionary taking keys & values using items in the list, take key before special character & value after special character, using comprehension """
+
+# list_ = ["food@table", "lilly@flower", "human@walk", "being@work"]
+
+""" 10. Create dictionary with key as string items & value as integer using the item in the given list, using comprehension """
+s = [(4, 56, 78), ("one", "Two", "Three")]
+
+// function #######################################
+""" 7. WAF to return the prime number present after the given number (if the given number is prime then return the same """
+n = 90
+// sorted #############################################
+
+""" 1. sort this list from a-z."""
+
+# l = ["hello", "ball", "zebra", "yak", "apple"]
+
+""" 2. Sort the words based on length """
+# s = "this world is not enough"
+
+""" 3. Sort based on the last character from the word """
+# l = ['hello', 'ball', 'zebra', 'yak', 'apple']
+
+""" 4. Sort based on the length of the keys """
+d = {'flipkart': 10, 'walmart': 15, 'google': 20}
+
+""" 5. d = {'flipkart':10, 'walmart':15, 'google':20}
+Sort based on the values """
+
+
+""" 6. WAF that accepts two strings & returns True if the two strings are Anagram of each other """
+
+""" 7. prices = {"ACME": 45.23, "AAPL": 612.78, "IBM": 205.55, "HPQ": 37.20, "FB": 10.25}
+Sort the dictionary based on the share prices if the prices are more than 40"""
+
+""" 8.
+
+Portfolio = [
+{'name':'IBM', 'shares': 100, 'price': 91.1}
+{'name':'AAPL', 'shares': 50, 'price': 543.22}
+{'name':'FB', 'shares': 200, 'price': 21.09}
+{'name':'HPQ', 'shares': 35, 'price': 31.75}
+{'name':'YHOO', 'shares': 45, 'price': 16.35}
+{'name':'ACME', 'shares': 75, 'price': 115.65}
+]
+Sort the above list based on number of shares
+"""
+
+
+""" 9. Find the most repeated charcter in the below string """
+# sentence = "hi hello hi hi hiiiiiiiii"
+
+""" 10. Find the longest non-repeating sub-string in the below string"""
+sentence = "This is a programming language and programming is fun"
+
+// Recursion ################################################################
+
+""" 1. Check whether the user given number is factorial or not using recursion """
+# we can write this program most effective manner
+
+""" 2. Write a recursion program to find the fibonacci series until the given range. """
+# n = 20
+#
+""" 3. WARP to print the reverse of string values in the list """
+# l = [1, "hello", "bye", 2, "thanks"]
+
+""" 4. WARP that prints the number 10, ten times """
+
+""" WARP to find the sum first n numbers """
+
+// File Handling ############################################
+""" 1. Create a file with .txt extension and do the following:
+a) write 5 sentences
+b) read all the lines and move cursor to beginning & display cursor position
+"""
+
+""" 2. WAP to read a csv file using two methods & write header & the two rows into the csv file"""
+
+
+""" 3. A file has text
+"Python is easy
+I switched to Python listening to others
+Python is snake"
+Replace Python with c and count the no. of words in each line & line numbers
+"""
+
+// Inheritance ########################################
+""" Create three classes Dad, Mom and child and get first name, middle name & last name and last name should be the
+same  for every class """
+
+""" Create a class that delays other class functionality """
+
+// Complete Python #####################################
+""" 1. Convert the string "Hello Welcome to Python" to comma separated string """
+
+# string_ = "Hello Welcome to Python"
+
+""" 2. Reverse item of list if the item is of odd length sting otherwise keep the item as it is by using list
+comprehension"""
+
+# names = ["apple", "google", 'yahoo', 'facebook', 'yelp', 'flipkart', 'gmail', 'instagram', 'microsoft']
+
+""" 3. Creating dictionary of city and population pairs using dict comprehension """
+
+# cities = ["Tokyo", "Delhi", "Shanghai", "Sao Paulo", "Mumbai"]
+# population = ['38,001,000', '25,703,168', '23,740,778', '21,066,245', '21,042,538']
+
+
+""" 4. WAP to print the following pattern
+*
+*
+*
+**
+*
+***
+*
+*****
+*
+*****
+
+"""
+""" 5. WAP to reverse a string without using any in built function """
+
+# Method 1:
+# s = "Hello Everyone"
+#
+
+""" 6. WAP to check if the given string is Palindrome or not without using reversed function """
+
+# string_ = "radar"
+""" 7. Write a Python Program to get the below output """
+# sentence = "Hi How are you"
+# # output should be: "uoy era woH iH"
+
+""" 8.Find the longest word in the sentence """
+# sentence = "Hello world. Welcome to Python"
+#
+
+""" 9. WAP to reverse the values in the dictionary if the value is of type sting """
+
+# d = {"a": "Hello", "b": 100, "c": 10.1, "d": "world"}
+
+""" 10. WAP to sum all the numbers in the string below """
+
+# s = "Sony12India567Pvtltd"
+
+""" 11. WAP to iterate through list and built a new dictionary of word and its length pair, only if the item of the
+list has even number of characters by using dictionary comprehension """
+# names = ["apple", 'yahoo', 'google', 'gmail', 'walmart', 'flipkart', 'facebook', 'amazon']
+#
+
+""" 12. create a dictionary by grouping Flowers & animals in the below list"""
+
+""" 13. WADF to delay the execution of a function for n seconds """
+""" 14. WAF to rotate character in a string """
+
+# rotate_string("helloworld", 1) ===> dhelloworld
+
+# string_ = "helloworld"
+""" 15. WAF which retun indexes of each item in the form of dictionary in the below list """
+
+# names = ["apple", "google", "apple", "yahoo", "yahoo", "google", 'gmail', 'gmail', 'gmail']
+# # # output  = {'apple': [0, 2], 'google': [1, 5], 'yahoo': [3, 4], 'gmail': [6, 7, 8]}
+
+
+// Mid Test #######################################
+
+""" 1. WAP to get all the duplicate items & the no of times the item is repeated in the list using both comprehension &
+ default dict """
+# names = ['apple', 'google', 'apple', 'yahoo', 'facebook', 'apple', 'gmail', 'gmail', 'gmail', 'gmail']
+
+""" 2. WAP to extract both alpha numeric value from the string, without using in-built-function """
+
+# s = "sony123@pv#td948"
+
+""" 3. WAF to print a particular word in a string along with its number of occurrences """
+
+""" 4. WAP to print longest non-repeated word in the sentence """
+
+# s = "See and saw went to see a sea"
+""" 5. Sort the dictionary based on the last character of the key """
+# prices = {"ACME": 45.23, "AAPL": 612.78, "IBM": 205.55, "HPQ": 37.20, "FB": 10.
+25}
+""" 6. Build a list with only even with even length string using filter"""
+
+# names = ['apple', 'google', 'yahoo', 'facebook', 'yelp', 'flipkart', 'gmail', 'instagram', 'microsoft']
+
+""" 7. WAP to return a list of elements raised to the power of their indices """
+# numbers = [32, 65, 39, 8, 1]
+#
+
+""" 8. WAP to count the no of occurrences of word in the string without using in-built-method """
+
+# sentence = "hello world welcome to python hello hi hello hello hi"
+
+""" 9. WA Python program to sum the square of first 20 natural numbers """
+# n = 20
+
+"""10. WA Dictionary comprehension to create a dictionary with word as its key and if the word is of numeric type
+reverse it else add the word as it is """
+
+sentence = "12 plus 18 equals to 30"
+
+""" 11. WAF that accepts two strings & returns True if the two strings are Anagrams of each other """
+
+""" 12.
+list_ = [2, 3, 9, 5, 8, 2, 3, 0, 4, 5, 3, 7, 1, 3, 8]
+key = 3
+output = [11, 2, 12, 9] """
+
+
+
+"""" 13. WAP to get the following output """
+# input:
+s = 'AABBCCCDAACDA'
+# output: 2A2B3C1D2A1C1D
+
+""" 14. output should be:
+{'apple': [0, 2], 'google':[1,8], 'yahoo':[3, 4, 5, 6, 7], 'gmail':[9, 10, 11] }"""
+# names = ["apple", "google", "apple", "yahoo", "yahoo", "yahoo", "yahoo", "yahoo", "google", "gmail", 'gmail', 'gmail']
+
+""" 15. Find all maximum numbers from the below list """
+# numbers = [1, 2, 3, 0, 4, 3, 2, 4, 2, 1, 0, 4]
+
+//............... COMPREHENSION ...............................
+
+// Dict
+
+"""WAP to create a dictionary with item & its index pair"""
+
+# s = "python"
+#
+"""WAP to create a dictionary with words & its length pair"""
+# s = "sky is no limit"
+#
+
+""" WAP to create a dictionary with character & its count pair """
+#
+# string = "hello world"
+
+"""WAP to create a dictionary of words & its count pair only if the words in of even length """
+
+# s = "python is a language, python programming is easy"
+
+""" WAP to create a dictionary with index & word pair if the word is of odd length reverse it else keep it as it is """
+
+# string = "python is a language, python programming is easy"
+#
+""" WAP to create a dictionary with word & its length pair only if the word starting with vowels """
+
+# string = "python is a language, python programming is easy"
+
+""" WAP to create a dictionary of index & item pair if the item is of string data type reverse it & rest as it is """
+# l = ["python", 1, 2.5, "ruby", "vS code", 99, 3+0j]
+#
+
+""" WAP to create a dictionary of index & item pair if the item is of string data type keep it as it is else reverse it """
+# l = ["python", 1, 2.5, "ruby", "vS code", 99, 3+0j]
+
+""" WA dictionary comprehension to flip or swap key & values in a dictionary """
+# d = {"a": 1, "b": 2, "c": 3, "d":4, "e": 5}
+#
+
+"""WAP to create a dict of character & its ascii value pair"""
+# s = "rainbow"
+
+"""WAP to create a dict of character as value & its ascii as key"""
+
+// LIST COMPREHENSION
+
+"""WAP to square all the elements that is present inside the list"""
+
+# l = [1, 2, 3, 4, 5]
+
+"""WAP to create a list of tuples which is having index & the corresponding items"""
+
+# l = ["python", 10, 3.2, "selenium", "Java"]
+#
+#
+""" WAP to create a list of even number from the below list """
+# l = [2, 9, 98, 100, 201, 36, 25, 41]
+#
+
+"""WAP to print even number from 0 to 10"""
+
+"""WAP to print even & odd number separately between 0 to 10"""
+
+"""WAP to create a list using the following list if the word is of even length store the word as it is & if it is of odd length reversed the word & store it"""
+
+# l = ["python", "Node Js", "selenium", "Java", "c++", "SQL"]
+#
+
+"""WAP to create a list from the following list if the elements are of type string keep them as it is else reversed it"""
+
+# l = ["python", 12, "selenium", 73.4, True, "SQL"]
+#
+
+"""WA list comprehension to create a list with the string starting with vowels"""
+# files = ["Amazon", "flipkart", "walmart", "gmail", "yahoo", "inox"]
+#
+
+""" traversing through a list in reversed order """
+
+# l = ["python", 10, 3.2, "selenium", "Java"]
+
+""" print even indexed elements in the list """
+# l = ["python", 10, 3.2, "selenium", "Java"]
+#
+
+""" print integers in a list """
+
+# l = ["python", 10, 3.2, "selenium", "Java"]
+#
+
+""" print only numeric datatypes"""
+
+# l = ["python", 10, 3.2, "selenium", "Java", 5+7j]
+
+""" print length of each string in the list """
+
+# l = ["python", "Node JS", "selenium", "Java"]
+#
+#
+""" print the strings with even length """
+
+# l = ["python", "Node JS", "selenium", "Java"]
+#
+
+""" reverse string elements or else keep it as it is"""
+
+# list_ = ["Java", "Python", 10, True, 1.4, "c++", "ruby", 3+5j]
+
+""" print if the element is starting with vowel """
+
+# files = ["Amazon", "flipkart", "walmart", "gmail", "yahoo", "intex"]
+#
+
+""" print the elements other than the given element"""
+# numbers = [10, 40, 20, 80, 20, 40, 30]
+
+""" print the palindromes in the given list """
+# l = ["python", "dad", "hai", "malayalam", "madam", "mom"]
+#
+""" print all the extensions in the following list """
+
+# files = ["youtube.txt", "amazon.pdf", "apple.xls", "flipkart.in"]
+
+""" printing file name with odd length """
+
+# files = ["youtube.txt", "amazon.pdf", "apple.xls", "flipkart.in"]
+#
+
+
+# """ index of first occurrence of the given element in the list"""
+#
+# numbers = [10, 40, 20, 80, 20, 40, 30, 20]
+# num = 20
+# not possible through comprehension
+
+""" check if the number is a prime number """
+# not possible by list comprehension
+
+""" to generate prime number series"""
+
+# not possible by list comprehension
+
+
+
+"""find prime no from the given list"""
+
+# l =[2, 4, 11, 15, 86, 98, 99]
+
+// SET COMPREHENSION #######################################
+
+
+"""Write a set comprehension to create a set of squares from 1 to 10"""
+#
+
+""" print index and its corresponding item in the set"""
+# l = ["python", 10, 3.2, "selenium", "Java"]
+#
+
+"""WA set comprehension traversing through a set in reversed order """
+# set_ = {"python", 10, 3.2, "selenium", "Java"}
+
+# it'll not work because item that is present inside the set in random or shuffle manner.
+
+"""WA set comprehension traversing through a list in reversed order """
+
+# l = ["python", 10, 3.2, "selenium", "Java"]
+
+# it'll also not work because item that is present inside the set in random or shuffle manner.
+
+""" WA set comprehension print even indexed elements in the list """
+
+# list_ = ["python", 10, 3.2, "selenium", "Java"]
+
+""""WA set comprehension to create a set of tuples of index & items"""
+
+# list_ = ["java", "python", True, 10, 1.4, "c++"]
+
+""""WA set comprehension to create a set of tuples of items & their length"""
+
+# list_ = ["python", "selenium", "Node JS", "Java", "SQL"]
+
+
+
+
+
