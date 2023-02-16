@@ -1,0 +1,28 @@
+
+we can use bootstrap, HTML, CSS  here
+and change accoding to requirement
+like
+    * margin- left,right,top and botton
+    * fix header on screen ,when we scroll the page
+    * use ifram here to show another web page in main web page and in ifram we can add slider like next or previous
+    * we can add automatic slider with time(5sec,10sec,etc) , and it will display next web paage /image automatic
+    * we can use div tag and inside this use multiple div according to requirement like - set (png)image and heading, paragraph and set paragraph- center,left,and right
+    * we can change color of heading ,border,background
+    * set image/png and it's heading and paragraph(details)
+    * we can create a block ,add some text ,change the color of text,margin,styling,and create a button - set margin of botton ,color,and link to web page.
+    * we can change the footer color,size,width and text,image etc.
+
+
+
+we can use bootstrap and change the code
+like
+    * header background color,logo,Searchbar,and pop for registration
+    * we can create searchbar outside the header (main searchbar)
+    * we can use mouse hover ,we click option it will show the content of option
+    * we can use image and that heading or paragraph or display the link
+    * we can create button and after click it will open in new window and display the content
+    * we can use ifram for display web page in main web page
+    * we can create a section or put all subject in list item, each section have own heading/topic and content
+    *
+
+    * We can create footer and content according to website
