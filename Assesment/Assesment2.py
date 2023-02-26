@@ -35,14 +35,17 @@ characters """
 
 
 """ 5. WAP to find the third largest number in the list without using any inbuilt functions"""
-# numbers = [10, 20, 30, 40, 50]
+numbers = [10, 20, 30, 40, 50]
 # res = []
 #
-# for index in range(len(numbers)):
+# for index in range(len(numbers)+1):
 #     if numbers[index] > numbers[index+1]:
 #         res[index],res[index+1] = res[index+1],res[index]
 #
 # print(res[-3]) # ?????????????????????????????????????
+# n = set(numbers)
+# n = sorted(n)
+# print(n[-3])
 
 """ 6. WAP to print all numeric values in a list """
 

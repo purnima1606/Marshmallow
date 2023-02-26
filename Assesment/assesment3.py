@@ -47,7 +47,8 @@
 # s = {i for i in languages if i[-1] not in "aeiouAEIOU"}
 # print(s)
 
-""" 10 . write a dictionary comprehension with the index and element pair if the element is of type numeric and if the element is of type string then reverse and store it ."""
+""" 10 . write a dictionary comprehension with the index and element pair if the element is of type numeric and 
+if the element is of type string then reverse and store it ."""
 # items = [10, 1.2, "python", True, "selenium"]
 # d = {index : item[::-1] if isinstance(item,str) else item for index,item in enumerate(items)}
 # print(d)
