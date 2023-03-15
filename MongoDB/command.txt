@@ -62,3 +62,49 @@ admin   40.00 KiB
 config  12.00 KiB
 local   40.00 KiB
 
+test> use purnima;
+switched to db purnima
+purnima>
+
+purnima> show dbs;
+admin   40.00 KiB
+config  60.00 KiB
+local   72.00 KiB
+purnima> db.mohan.insertOne({})
+{
+  acknowledged: true,
+  insertedId: ObjectId("6411a08b783f4018c429ea06")
+}
+
+
+purnima> db.mohan.insertOne({name:"NodeJS", type:"Front End", active:"True" })
+{
+  acknowledged: true,
+  insertedId: ObjectId("6411a1c6783f4018c429ea07")
+}
+
+
+purnima>show dbs;
+admin    40.00 KiB
+config   96.00 KiB
+local    72.00 KiB
+purnima  72.00 KiB
+
+purnima>db;
+purnima
+
+purnima> show collections;
+mohan
+
+purnima> db.mohan.find()
+[
+  { _id: ObjectId("6411a08b783f4018c429ea06") },
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  }
+]
+
+

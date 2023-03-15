@@ -93,5 +93,41 @@ close_ = 0
 
 ##########################################################
 
+s = "python is good"
+# o/p = [(0,5),(7,8),(10,13)]
+st = 0
+ed = 0
+l = []
+# for i in s:
+#     if i == " ":
+#         nx = s.index(" ")+1
+#         ed = s.index(" ")-1
+#         l.append((st, ed))
+#         st = nx
+#     else:
+#         continue             #   # [(0, 5), (7, 5)]
+#
+
+
+
+s = "python is good"
+# o/p = [(0,5),(7,8),(10,13)]
+st = 0
+ed = 0
+l = []
+
+for i in s:
+    if i !=" ":
+        ed = s.index(i)
+    else:
+        nx = s.index(" ")+1
+        l.append((st,ed))
+        st = nx
+
+
+print(l)
+# [(0, 5), (7, 8)]
+# print(len(s))
+
 
 
