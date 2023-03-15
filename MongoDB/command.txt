@@ -23,6 +23,7 @@ Build Info: {
     "allocator": "tcmalloc",
     "environment": {
         "distmod": "windows",
+
         "distarch": "x86_64",
         "target_arch": "x86_64"
     }
@@ -30,3 +31,18 @@ Build Info: {
 
 
 C:\Users\user>"C:\Program Files\MongoDB\Server\6.0\bin\mongod.exe"
+
+Error :
+    BadValue: error: no args for --configdb
+    try 'mongos --help' for more information
+
+    mongo is not recognize
+    'mongo' is not recognized as an internal or external command,
+    operable program or batch file.
+
+
+C:\Users\user>mongosh
+Current Mongosh Log ID: 64117d26ead74a0392173851
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.0
+MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+
