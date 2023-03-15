@@ -32,6 +32,7 @@ Build Info: {
 
 C:\Users\user>"C:\Program Files\MongoDB\Server\6.0\bin\mongod.exe"
 
+// Got This Error
 Error :
     BadValue: error: no args for --configdb
     try 'mongos --help' for more information
@@ -45,4 +46,19 @@ C:\Users\user>mongosh
 Current Mongosh Log ID: 64117d26ead74a0392173851
 Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.0
 MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+
+// After fix problem
+
+C:\Users\user>mongosh
+Current Mongosh Log ID: 641181dab5041b81fa50195c
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.0
+Using MongoDB:          6.0.4
+Using Mongosh:          1.8.0
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+test> show dbs;                        // command
+admin   40.00 KiB
+config  12.00 KiB
+local   40.00 KiB
 
