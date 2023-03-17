@@ -107,4 +107,52 @@ purnima> db.mohan.find()
   }
 ]
 
+purnima>console.clear();
 
+purnima> use purnima
+already on db purnima
+
+purnima> db.mohan.find();
+[
+  { _id: ObjectId("6411a08b783f4018c429ea06") },
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  }
+]
+purnima> db.mohan.find().pretty();
+[
+  { _id: ObjectId("6411a08b783f4018c429ea06") },
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  }
+]
+
+
+purnima> db.mohan.insertOne({name:"MongoDB", type:"DataBase", active:"True"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("64142df2eacaf591b020aeb7")
+}
+
+purnima> db.mohan.find();
+[
+  { _id: ObjectId("6411a08b783f4018c429ea06") },
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  }
+]
