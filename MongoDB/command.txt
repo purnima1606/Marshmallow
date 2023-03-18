@@ -133,6 +133,8 @@ purnima> db.mohan.find().pretty();
   }
 ]
 
+// CRUD Operation
+// create DataBase and collections(tables)
 
 purnima> db.mohan.insertOne({name:"MongoDB", type:"DataBase", active:"True"});
 {
@@ -156,3 +158,403 @@ purnima> db.mohan.find();
     active: 'True'
   }
 ]
+
+purnima> db.mohan.insertMany([{name:"NodeJS",type:"BackEnd", active:"True"},{name:"Python",type:"BackEnd", active:"True"},{name:"ReactJS", type:"BackEnd",active:"False"},{name:"c++", type:"BackEnd",active:"True"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("641576395d2fe94fd927bb8c"),
+    '1': ObjectId("641576395d2fe94fd927bb8d"),
+    '2': ObjectId("641576395d2fe94fd927bb8e"),
+    '3': ObjectId("641576395d2fe94fd927bb8f")
+  }
+}
+
+purnima> db.mohan.find().pretty()
+[
+  { _id: ObjectId("6411a08b783f4018c429ea06") },
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8c"),
+    name: 'NodeJS',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8d"),
+    name: 'Python',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8e"),
+    name: 'ReactJS',
+    type: 'BackEnd',
+    active: 'False'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8f"),
+    name: 'c++',
+    type: 'BackEnd',
+    active: 'True'
+  }
+]
+
+// Read DataBase and Collections
+// db.collection.findQuery,projection
+
+// questions
+// 1.find all the result of the given collection.
+
+purnima> db.mohan.find()
+[
+  { _id: ObjectId("6411a08b783f4018c429ea06") },
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8c"),
+    name: 'NodeJS',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8d"),
+    name: 'Python',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8e"),
+    name: 'ReactJS',
+    type: 'BackEnd',
+    active: 'False'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8f"),
+    name: 'c++',
+    type: 'BackEnd',
+    active: 'True'
+  }
+]
+
+
+// 2. show the result in pretty formate
+
+purnima> db.mohan.find().pretty()
+[
+  { _id: ObjectId("6411a08b783f4018c429ea06") },
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8c"),
+    name: 'NodeJS',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8d"),
+    name: 'Python',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8e"),
+    name: 'ReactJS',
+    type: 'BackEnd',
+    active: 'False'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8f"),
+    name: 'c++',
+    type: 'BackEnd',
+    active: 'True'
+  }
+]
+
+// 3. Get  only mongoDB Datas as a output.
+
+purnima> db.mohan.find((name:"mongodb"))   // here we pass exactly the same key and value pair else we will get error
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:19)
+
+> 1 | db.mohan.find((name:"mongodb"))
+    |                    ^
+  2 |
+
+purnima> db.mohan.find((name,"MongoDB"))
+ReferenceError: name is not defined
+
+purnima> db.mohan.find(('name:"MongoDb"'))
+MongoInvalidArgumentError: Query filter must be a plain object or ObjectId
+
+purnima> db.mohan.find({name:"MongoDB"})            // we can't use here ()
+[
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  }
+]
+
+purnima> db.mohan.find({name:"MongoDB"}).pretty()
+[
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  }
+]
+
+// 4.Get only MongoDB data as a output with only name field
+
+purnima> db.mohan.find({name:"MongoDB"}, {name:1}).pretty()                                     // use projection
+[ { _id: ObjectId("64142df2eacaf591b020aeb7"), name: 'MongoDB' } ]
+
+// 4.1 Get only MongoDB data as a output without  name field.
+purnima> db.mohan.find({name:"MongoDB"},{name:0}).pretty()                                       // use projection
+[
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    type: 'DataBase',
+    active: 'True'
+  }
+]
+
+// 5.Get the MongoDB data without id field init .
+
+purnima> db.mohan.find({name:"MongoDB"},{id:0, name:1})
+MongoServerError: Cannot do inclusion on field name in exclusion projection
+
+purnima> db.mohan.find({name:"MongoDB"}, {_id:0, name:1})
+[ { name: 'MongoDB' } ]
+
+
+// 6.set the filter to "active true" and get only the first field with "active true" value.
+
+purnima> db.mohan.find({active:"True"}).pretty()
+[
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8c"),
+    name: 'NodeJS',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8d"),
+    name: 'Python',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8f"),
+    name: 'c++',
+    type: 'BackEnd',
+    active: 'True'
+  }
+]
+
+purnima> db.mohan.find().pretty()
+[
+  { _id: ObjectId("6411a08b783f4018c429ea06") },
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8c"),
+    name: 'NodeJS',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8d"),
+    name: 'Python',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8e"),
+    name: 'ReactJS',
+    type: 'BackEnd',
+    active: 'False'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8f"),
+    name: 'c++',
+    type: 'BackEnd',
+    active: 'True'
+  }
+]
+
+purnima> db.mohan.find({active:"True"}).pretty().limit(1)
+[
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  }
+]
+
+purnima> db.mohan.find({active:"True"}).pretty().limit(2)
+[
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Front End',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  }
+]
+
+// 7. Do the same as 6th Question but with different method.
+
+purnima> db.mohan.findOne({active:"True"}).pretty()
+TypeError: db.mohan.find ... rue"}).pretty is not a function
+
+purnima> db.mohan.findOne({active:"True"})
+{
+  _id: ObjectId("6411a1c6783f4018c429ea07"),
+  name: 'NodeJS',
+  type: 'Front End',
+  active: 'True'
+}
+
+// 8. Do the same as 6th Question but this time, get the 2nd field with activetrue by skipping the first field.
+
+purnima> db.mohan.find({active:"True"}).pretty().limit(1).skip()
+MongoInvalidArgumentError: Operation "skip" requires an integer
+
+purnima> db.mohan.find({active:"True"}).pretty().limit(1).skip(1)
+[
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  }
+]
+
+purnima> db.mohan.find({active:"True"}).limit(1).skip(1)
+[
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  }
+]
+
+// Update = updateOne or updateMany
+
+// 1.Update the NodeJS type value to "Full Stack".
+
+purnima> db.mohan.updateOne({name:"NodeJS"},{$set:{type:"Full Stack"} })
+{lready on db purnimaC again or Ctrl+D or type .exit)
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+purnima> db.mohan.find()
+[
+  { _id: ObjectId("6411a08b783f4018c429ea06") },
+  {
+    _id: ObjectId("6411a1c6783f4018c429ea07"),
+    name: 'NodeJS',
+    type: 'Full Stack',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("64142df2eacaf591b020aeb7"),
+    name: 'MongoDB',
+    type: 'DataBase',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8c"),
+    name: 'NodeJS',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8d"),
+    name: 'Python',
+    type: 'BackEnd',
+    active: 'True'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8e"),
+    name: 'ReactJS',
+    type: 'BackEnd',
+    active: 'False'
+  },
+  {
+    _id: ObjectId("641576395d2fe94fd927bb8f"),
+    name: 'c++',
+    type: 'BackEnd',
+    active: 'True'
+  }
+]
+
+// 2. Update all the fields with the type value equal to "Front End" and 
