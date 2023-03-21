@@ -1,0 +1,70 @@
+Use Compass(MongoDB)
+Connect
+    localhost:- mongodb://localhost:27017
+    Authentication:- ......./Optional
+        [Connect]
+
+Create DataBase Name:-
+    DataBase Name:- purnima
+    Collection Name:- mohan
+        [create DataBase]
+
+************* CRUD ***************
+
+For Create:-
+    Go for ADD DATA
+        Choose insert document
+            it will automatic id generate in compass.......
+
+            {
+                 _id: ObjectId('6416bd9c2b276181cf9751f3')
+                name: "NodJS",
+                type: "Front End",
+                active: "True"
+            }
+
+For Read:-
+    Go For Filter and write Query
+        {key:"value"} => Enter
+        like :- {name:"NodeJS"}
+        it will show ...
+        {
+            _id: ObjectId('6416bef12b276181cf9751f5')
+            name: "NodeJS"
+            type:"Back End"
+            active:"True
+        }
+
+For Update:-
+    Go For Edit and choose The Document
+    like :-
+        {
+                 _id: ObjectId('6416bd9c2b276181cf9751f3')
+                name: "NodJS",
+                type: "Front End",
+                active: "True"
+        }
+
+        After update/edit :-
+        {
+                 _id: ObjectId('6416bd9c2b276181cf9751f3')
+                name: "NoedJS",
+                type: "Front End",
+                active: "True"
+        }
+
+for Delete :-
+    Go For Delete, Choose The Document/Select The Document And Click on Delete icon.
+
+
+***************** How To Connect MongoDB To NodeJS/ExpressJS     ************************************************************
+NodeJS Connect with MongoDB
+OR
+NodeJS Connect With Mongoose Connect With Mongo Driver Connect With MongoDB
+
+mongoose
+    * it is stablish the relation between MongoDB And NodeJS/ExpressJS
+
+
+
+
