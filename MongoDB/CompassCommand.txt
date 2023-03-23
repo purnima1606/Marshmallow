@@ -1,0 +1,25 @@
+Use Compass(MongoDB)
+Connect
+    localhost:- mongodb://localhost:27017
+    Authentication:- ......./Optional
+        [Connect]
+
+Create DataBase Name:-
+    DataBase Name:- purnima
+    Collection Name:- mohan
+        [create DataBase]
+
+************* CRUD ***************
+
+For Create:-
+    Go for ADD DATA
+        Choose insert document
+            it will automatic id generate in compass.......
+
+            {
+                 _id: ObjectId('6416bd9c2b276181cf9751f3')
+                name: "NodJS",
+                type: "Front End",
+                active: "True"
+            }
+
