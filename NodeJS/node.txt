@@ -1,0 +1,87 @@
+NODE JS  and Express JS
+node js comple
+Express
+backend and frontend or database
+
+what is node js?
+    node js is a javascript runtime built on chrome v8 javascript engine
+    node js is a javascript running on the server
+
+run on browser(on console) i.e client side scripting language
+but now we can run on server
+
+when use node js
+    * I/O bound
+        nonblocking --> multiple request /event loop
+    * Data Streaming Applications
+        scroll up and all data load like facebook, instragram....
+    * Real Time Chat Applications
+        live chat.... whatsaap ,hike, ..
+
+
+how to install node js ?
+
+    LTS => Long Term Support
+    node -v
+    npm -v (Node Package Manager)
+
+
+
+basic and advance javascript
+    event loop
+    call back
+    promises
+    Async wait
+    try catch error
+
+ECMAScript 6
+Client Server Model(Optional )
+
+NODE JS REPL  ???
+    the REPL feature of node js is very useful in experimenting with node.js code  and to debug JavaScript code
+    s.
+
+    Read -- Reads user's input parses the input into JavaScript data-structure, and stores in memory.
+    Eval -- Takes and evaluates the data structure.
+    Print -- Print the result.
+    Loop -- Loops the above command until the user presses ctrl-c twice.
+
+    do this in REPL
+        js Expression
+        Use Variable
+        Multiple code
+        use (_) to get the last result
+        We can use editor node
+    press tab 2 time
+    write fs
+
+What is Node.js Core Module?
+    liberary(fs,os,express, http)..... use through require()
+
+fs CRUD ......
+Synchronous CRUD ...
+Asynchronous CRUD ...
+OS Module .....
+path Module .....
+Create and Export Own Module ......
+
+create file and read ,write and append
+...all above are in-built Modules...
+
+Create and Export Module ...
+
+npm module like .. chalk , validator , etc
+npm global .. nodemon     // not install in my system
+
+
+
+
+
+
+
+
+
+
+
+
+
