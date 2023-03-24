@@ -1,0 +1,30 @@
+const express = require("express");
+
+// const bodyParse = require("body-parse");
+
+const app = express();
+
+app.use(urlencoded)
+app.get("/", function(req, res) {
+    res.send("Welcome To Home Page :) ");
+} );
+
+app.get("/about", function(req, res){
+    res.send("Welcome To About Page....");
+});
+
+app.get("/contact", function(req, res){
+    res.send("Welcome To Contact Page ......");
+});
+
+app.get("/calculator", function(req, res){
+    console.log(__dirname);
+    res.sendFile(__dirname+"/index.html");
+});
+
+
+
+app.listen(3000, function(req, res) {
+    console.log("Connection Created .....");
+    // res.send(`${port} Connection Created .....`);
+});
