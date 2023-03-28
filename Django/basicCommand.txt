@@ -5,9 +5,115 @@ Python 3.10.4
 
 
 
+C:\Users\user>python -m pip install Django
 
 C:\Users\user>python
 >>> import django
 >>> print(django.get_version())
 4.1.5
 >>> exit()
+
+
+$ git clone https://github.com/django/django.git
+$ python -m pip install -e django/
+
+check Django Version on CMD =>  $python -m django --version
+C:\Users\user>python -m django --version
+4.1.5
+
+error telling “No module named django” => it means Django is not install in your System.
+
+C:\Users\user>python -m django-admin --version
+C:\Users\user\AppData\Local\Programs\Python\Python310\python.exe: No module named django-admin
+
+
+Create A Project  =>  C:\Users\user\django-admin startproject mysite
+
+Let’s look at what startproject created:
+    mysite/
+        manage.py
+        mysite/
+            __init__.py
+            settings.py
+            urls.py
+            asgi.py
+            wsgi.py
+
+
+Run Server => C:\Users\user>python manage.py runserver
+
+$ python manage.py runserver 8080
+$ python manage.py runserver 0.0.0.0:8000
+$ python manage.py startapp polls
+
+
+*************************************** polls/views.py *********************************************************
+                                    from django.http import HttpResponse
+
+
+                                    def index(request):
+                                        return HttpResponse("Hello, world. You're at the polls index.")
+
+
+*************************************** polls/urls.py *********************************************************
+                                    from django.urls import path
+
+                                    from . import views
+
+                                    urlpatterns = [
+                                        path('', views.index, name='index'),
+                                    ]
+
+
+*************************************** mysite/urls.py *********************************************************
+                                    from django.contrib import admin
+                                    from django.urls import include, path
+
+                                    urlpatterns = [
+                                        path('polls/', include('polls.urls')),
+                                        path('admin/', admin.site.urls),
+                                    ]
+
+
+ Database setup
+
+mysite/settings.py
+    'django.db.backends.sqlite3'
+    'django.db.backends.postgresql'
+    'django.db.backends.mysql'
+    'django.db.backends.oracle'
+
+
+$ python manage.py migrate
+polls/models.py
+                        from django.db import models
+
+
+                        class Question(models.Model):
+                            question_text = models.CharField(max_length=200)
+                            pub_date = models.DateTimeField('date published')
+
+
+                        class Choice(models.Model):
+                            question = models.ForeignKey(Question, on_delete=models.CASCADE)
+                            choice_text = models.CharField(max_length=200)
+                            votes = models.IntegerField(default=0)
+
+
+mysite/settings.py
+                        INSTALLED_APPS = [
+                            'polls.apps.PollsConfig',
+                            'django.contrib.admin',
+                            'django.contrib.auth',
+                            'django.contrib.contenttypes',
+                            'django.contrib.sessions',
+                            'django.contrib.messages',
+                            'django.contrib.staticfiles',
+                        ]
+
+
+$ python manage.py makemigrations polls
+Migrations for 'polls':
+  polls/migrations/0001_initial.py
+    - Create model Question
+    - Create model Choice
