@@ -1,1 +1,2 @@
 Q1 :- Explain Django Architecture?
+Q2 :- Explain the django project directory structure?
