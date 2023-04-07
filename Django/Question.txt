@@ -5,13 +5,17 @@ Q4 :- What are templates in Django or Django template language?
 Q5 :- What are views in Django?
 Q6 :- What is Django ORM?
 Q7 :- Define static files and explain their uses?
-Q8
-Q9
-Q10
-Q11
-Q12
-Q13
-Q14
-Q15
-Q16
+Q8 :- What is Django Rest Framework(DRF)?
+Q9 :- What is django-admin and manage.py and explain its commands?
+Q10 :- What is Jinja templating?
+Q11 :- What are Django URLs?
+Q12 :- What is the difference between a project and an app in Django?
+Q13 :- What are different model inheritance styles in the Django?
+
+intermediate level Questions:-
+
+Q14 :- What are Django Signals?
+Q15 :- Explain the caching strategies in the Django?
+Q16 :- Explain user authentication in Django?
+Q17 :- How to Configure static files?
 
