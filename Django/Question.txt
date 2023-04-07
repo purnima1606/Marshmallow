@@ -2,9 +2,9 @@ Q1 :- Explain Django Architecture?
 Q2 :- Explain the django project directory structure?
 Q3 :- What are models in Django?
 Q4 :- What are templates in Django or Django template language?
-Q5
-Q6
-Q7
+Q5 :- What are views in Django?
+Q6 :- What is Django ORM?
+Q7 :- Define static files and explain their uses?
 Q8
 Q9
 Q10
