@@ -12,10 +12,38 @@ Q11 :- What are Django URLs?
 Q12 :- What is the difference between a project and an app in Django?
 Q13 :- What are different model inheritance styles in the Django?
 
-intermediate level Questions:-
+Intermediate Level Questions:-
 
 Q14 :- What are Django Signals?
 Q15 :- Explain the caching strategies in the Django?
 Q16 :- Explain user authentication in Django?
 Q17 :- How to Configure static files?
+Q18 :- Explain Django Response lifecycle?
+Q19 :- What databases are supported by Django?
+Q20 :- What's the use of a session framework?
+Q21 :- What's the use of Middleware in Django?
+Q22 :- What is context in the Django?
+Q23 :- What is django.shortcuts.render function?
+Q24 :- What's the significance of the settings.py file?
+Q25 :- How to view all items in the Model?
+Q26 :- How to filter items in the Model?
+
+Advance Level Questions :-
+
+Q27 :- How to use file-based sessions?
+Q28 :- What is mixin?
+Q29 :- What is Django Field Class?
+Q30 :- Why is permanent redirection not a good option?
+Q31 :- Difference between Django OneToOneField and ForeignKey Field?
+Q32
+Q33
+Q34
+Q35
+Q36 :-
+Q37 :- Explain Q objects in Django ORM?
+Q38 :- What are Django exceptions?
+
+
+
+
 
