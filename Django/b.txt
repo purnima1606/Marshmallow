@@ -15,3 +15,8 @@ Documentation
 
 #####################################################################################
 MVT
+model = use for manage database and connection
+view = use for function or method and extract data
+template = A template is a file where you describe how the result should be represented.
+
+##########################################################################
