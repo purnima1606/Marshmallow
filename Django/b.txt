@@ -1,0 +1,17 @@
+Django Core
+Building web application
+Integrating Django Authentication
+Learning Version Control
+Deploying Project Online
+
+################################################################################
+Libraries
+Concept
+Architecture
+Design Principle
+Security Updates
+Documentation
+
+
+#####################################################################################
+MVT
