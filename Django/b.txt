@@ -20,3 +20,36 @@ view = use for function or method and extract data
 template = A template is a file where you describe how the result should be represented.
 
 ##########################################################################
+C:\Users\user>myworld\Scripts\activate.bat
+(myworld) C:\Users\user>
+
+########################################################
+PS E:\DjangoCode> python --version
+Python 3.10.4
+
+PS E:\DjangoCode> pip --version
+pip 22.0.4 from C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\pip (python 3.10)
+
+PS E:\DjangoCode> django-admin --version
+4.1.5
+
+PS E:\DjangoCode> django-admin startproject djangopractice
+CommandError: 'E:\DjangoCode\djangopractice' already exists
+
+PS E:\DjangoCode> python manage.py runserver
+C:\Users\user\AppData\Local\Programs\Python\Python310\python.exe: can't open file 'E:\\DjangoCode\\manage.py': [Errno 2] No such file or directory
+
+PS E:\DjangoCode> cd djangopractice
+PS E:\DjangoCode\djangopractice> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2023 - 18:56:12
+Django version 4.1.5, using settings 'djangopractice.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+OPEN NEW WINDOW => http://127.0.0.1:8000/ and click
+
