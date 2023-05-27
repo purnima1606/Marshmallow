@@ -53,3 +53,39 @@ Quit the server with CTRL-BREAK.
 
 OPEN NEW WINDOW => http://127.0.0.1:8000/ and click
 
+
+
+###########################################################################################################################
+*******************************  Urls and Views  **************************************
+====>  djangopractice\djangopractice\urls.py
+
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('admin/', admin.site.urls),                           # By Default add admin application in main URLS file.
+    path('members/', include('members.urls')),                 # here add the membersApplication((app) in main URLS file.
+]
+
+
+====> djangopractice\members\urls.py
+
+from django.urls import path
+# from . import views                               # 1st way to import views
+from members import views                           # 2nd way to import views
+
+urlpatterns = [
+    path('', views.members, name='members'),
+]
+
+===> djangopractice\members\views.py
+
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def members(request):
+
+    return HttpResponse("Hello Purnima :)")
+
+################################################################################################################
+
