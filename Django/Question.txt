@@ -3,13 +3,20 @@ Q2 :- Explain the django project directory structure?
 Q3 :- What are models in Django?
 Q4 :- What are templates in Django or Django template language?
 Q5 :- What are views in Django?
+
 Q6 :- What is Django ORM?
 Q7 :- Define static files and explain their uses?
 Q8 :- What is Django Rest Framework(DRF)?
 Q9 :- What is django-admin and manage.py and explain its commands?
+    when we check version of django then we will use django-admin --version .
+    we can runserver with the help of manage.py file like python manage.py runserver.
+
 Q10 :- What is Jinja templating?
 Q11 :- What are Django URLs?
 Q12 :- What is the difference between a project and an app in Django?
+    project is folder .
+    app is section in that folder or project.
+
 Q13 :- What are different model inheritance styles in the Django?
 
 Intermediate Level Questions:-
