@@ -51,11 +51,11 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 
 
-OPEN NEW WINDOW => http://127.0.0.1:8000/ and click
+OPEN NEW WINDOW => 127.0.0.1:8000 and click
 
 
 
-###########################################################################################################################
+#######################################################################################################################
 *******************************  Urls and Views  **************************************
 ====>  djangopractice\djangopractice\urls.py
 
@@ -63,8 +63,8 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),                           # By Default add admin application in main URLS file.
-    path('members/', include('members.urls')),                 # here add the membersApplication((app) in main URLS file.
+    path('admin/', admin.site.urls),                          # By Default add admin application in main URLS file.
+    path('members/', include('members.urls')),                # here add the membersApplication((app) in main URLS file.
 ]
 
 
@@ -88,4 +88,31 @@ def members(request):
     return HttpResponse("Hello Purnima :)")
 
 ################################################################################################################
+************************* Templates ****************************************
+# connect template.py and views.py
+
+======> djangopractice\members\views.py
+
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def members(request):
+    return render(request, 'members.html', {})
+
+
+========> djangopractice\members\templates\members.html
+
+<h1>Welcome to Members Page.......</h1>
+
+It will display on url = http://127.0.0.1:8000/members/
+Welcome to Members Page.......
+
+
+COMMON TEMPLATE  FOR ALL LIKE FOOTER ,HEADER , AND LOGO etc (IN MAIN directory)
+other/rest are inside app directory.
+
+####################################################################################################################
+************** Bootstrap ******************************************
+
+
 
