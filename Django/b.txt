@@ -312,3 +312,7 @@ def members(request):
         'welcome_text':"welcome purnima singh, you use here jinja",
     }
     return render(request, 'members.html', context)                   # here we can use multiple key and value pair inside context
+
+
+######################################################################################################################################################
+**************************** Base Template and Jinja 2 ***************************************************
