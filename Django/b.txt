@@ -482,4 +482,10 @@ def about(request):
      return render(request, '', context)
 
 
+link ==> http://127.0.0.1:8000/members/contact  and  ==> http://127.0.0.1:8000/members/about
 
+Create a templates folder inside main folder djangopractice
+    create base.html file inside templates folder
+    After this change setting.py file
+
+    'DIRS': [ ] ===>  'DIRS': [os.path.join(BASE_DIR, 'templates'),],       # check on StackOverFlow
