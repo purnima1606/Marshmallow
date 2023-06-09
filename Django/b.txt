@@ -489,3 +489,42 @@ Create a templates folder inside main folder djangopractice
     After this change setting.py file
 
     'DIRS': [ ] ===>  'DIRS': [os.path.join(BASE_DIR, 'templates'),],       # check on StackOverFlow
+
+************** change here =====> djangopractice\members\views.py
+
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def home(request):
+     return render(request, 'home.html', {})
+
+def members(request):
+
+    # return HttpResponse("Hello Purnima :)")                     # this is use for views and url connection
+    # return render(request, 'members.html', {})                    # this is use for template and display msz
+    # return render(request, 'members.html', {'welcome_text':'welcome purnima , use jinja 2 Here !!!!!'} )            # used jinja 2
+    context = {
+        'welcome_text':"welcome purnima singh, you use here jinja",
+    }
+    return render(request, 'members.html', context)                   # here we can use multiple key and value pair inside context
+
+def contact(request):
+     context = {
+        'welcome_text':"welcome to contact page purnima",
+    }
+     return render(request, '', context)
+
+def about(request):
+     context = {
+        'welcome_text':"welcome to about page purnima",
+    }
+     return render(request, '', context)
+
+
+link ==> http://127.0.0.1:8000/members/contact  and  ==> http://127.0.0.1:8000/members/about
+
+Create a templates folder inside main folder djangopractice
+    create base.html file inside templates folder
+    After this change setting.py file
+
+    'DIRS': [ ] ===>  'DIRS': [os.path.join(BASE_DIR, 'templates'),],       # check on StackOverFlow
