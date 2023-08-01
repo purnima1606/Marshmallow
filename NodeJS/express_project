@@ -1,0 +1,128 @@
+>> PS C:\Users\user\Desktop\node js projects> mkdir express_project
+
+
+    Directory: C:\Users\user\Desktop\node js projects
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        01-08-2023     13:10                express_project
+
+>> PS C:\Users\user\Desktop\node js projects> cd express_project
+>> PS C:\Users\user\Desktop\node js projects\express_project> mkdir mycontact_backend
+
+
+    Directory: C:\Users\user\Desktop\node js projects\express_project
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        01-08-2023     13:14                mycontact_backend
+
+>> PS C:\Users\user\Desktop\node js projects\express_project> cd mycontact_backend
+>> PS C:\Users\user\Desktop\node js projects\express_project\mycontact_backend> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (mycontact_backend) mycontact_backend_api
+version: (1.0.0)
+description: this is express project for my contact backend api
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\user\Desktop\node js projects\express_project\mycontact_backend\package.json:
+
+{
+  "name": "mycontact_backend_api",
+  "version": "1.0.0",
+  "description": "this is express project for my contact backend api  ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) y
+
+
+>> PS C:\Users\user\Desktop\node js projects\express_project\mycontact_backend> npm install express
+
+added 58 packages, and audited 59 packages in 10s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+>> PS C:\Users\user\Desktop\node js projects\express_project\mycontact_backend> npm i -D nodemon
+
+added 33 packages, and audited 92 packages in 15s
+
+11 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+>> PS C:\Users\user\Desktop\node js projects\express_project\mycontact_backend> npm run dev
+
+> mycontact_backend_api@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 3.0.1
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+[nodemon] clean exit - waiting for changes before restart
+
+
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+I am in Express JS
+
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+server running on port 5000
+
+
+>>> 2nd terminal
+PS C:\Users\user\Desktop\node js projects> cd express_project
+PS C:\Users\user\Desktop\node js projects\express_project> cd mycontact_backend
+PS C:\Users\user\Desktop\node js projects\express_project\mycontact_backend> npm i dotenv
+
+added 1 package, and audited 93 packages in 2s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+>>> 1st terminal
+
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+server running on port 5001
+
+>>> Thunder Client ......
+{
+  "message": "Get all contacts"
+}
+
+Get all contacts
